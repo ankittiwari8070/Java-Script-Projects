@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arman's JavaScript Projects</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .main {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* LEFT FIXED PANEL */
+        .left {
+            width: 40%;
+            background: #111;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 25px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+        }
+
+        .left img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        .info {
+            margin-top: 20px;
+        }
+
+        .left h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .left p {
+            font-size: 15px;
+            color: #ccc;
+        }
+
+        /* RIGHT SIDE CONTENT */
+        .right {
+            width: 60%;
+            margin-left: 40%;
+            padding: 40px;
+            height: 100vh;
+            overflow-y: auto;
+
+            /* Hide scrollbar */
+            scrollbar-width: none; /* Firefox */
+        }
+
+        .right::-webkit-scrollbar {
+            display: none; /* Chrome / Safari / Edge */
+        }
+
+        /* PROJECT CARD */
+        .project {
+            background: white;
+            padding: 18px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .level-title {
+            background: #222;
+            color: #ccc;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .project h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .project a {
+            background: #111;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: 0.3s;
+            font-size: 14px;
+        }
+
+        .project a:hover {
+            background: #444;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 900px) {
+            .left {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .right {
+                width: 100%;
+                margin-left: 0;
+                height: auto;
+                padding: 20px;
+            }
+
+            .main {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="main">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" />
+
+        <div class="info">
+            <h1>Ankit's JS Projects</h1>
+            <p>Explore all my JavaScript DOM mini-projects created for learning & fun.</p>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+
+        <div class="project level-title">
+            <h3>Level 1</h3>
+        </div>
+
+        <div class="project">
+            <h3>Download Timer</h3>
+            <a href="./Download_button/">Open</a>
+        </div>
+
+        <div class="project">
+            <h3>Create_Element</h3>
+            <a href="Create_Element/" >Open</a>
+        </div>
+
+        <div class="project">
+            <h3>Instagram Like</h3>
+            <a href="./Like_Feature/">Open</a>
+        </div>
+
+        <div class="project">
+            <h3>Cards</h3>
+            <a href="./User_Profiles/">Open</a>
+        </div>
+
+        <div class="project">
+            <h3>Cursor</h3>
+            <a href="">Open</a>
+        </div>
+
+        <div class="project">
+            <h3>Query Selector All</h3>
+            <a href="./Query Selector All/">Open</a>
+        </div>
+
+        <div class="project level-title">
+            <h3>Level 2</h3>
+        </div>
+
+        <div class="project">
+            <h3>Reels</h3>
+            <a href="./reels/">Open</a>
+        </div>
+        <div class="project">
+            <h3>Spotlight Effect</h3>
+            <a href="./SPOTLIGHT/">Open</a>
+        </div>
+        <div class="project">
+            <h3>MATRIX-TEXT</h3>
+            <a href="./MATRIX-TEXT/">Open</a>
+        </div>
+
+        
+
+    </div>
+
+</div>
+
+</body>
+</html>
